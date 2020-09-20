@@ -1,4 +1,4 @@
-# Usage
+# Exporting student accounts from Canvas to Autolab
 
 1. Download the roster for your course from canvas:
 
@@ -15,7 +15,7 @@
 3. Use the generated roster in Autolab to create student accounts:
 
    ```
-   Autolab > Course > Manage Course > Manage Students > Import Roster/Users > Browse > Select the exported file
+   Autolab > Course > Manage Course > Manage Students > Import Roster/Users > Browse > Select the generated file
    ```
 
    
