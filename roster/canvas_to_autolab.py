@@ -23,16 +23,13 @@ def main(args):
    for index, row in canvas.iterrows():
       email = row['SIS Login ID'] + '@uncc.edu'
       student = row['Student']
-
-      # ignore the test student record
-      if student == 'Test Student': 
-         continue
-
-      name = student.split(' ')
-      first_name = name[0]
-      last_name = ''
-      if len(name) > 1:
-         last_name = ' '.join(name[1:])
+    
+      last_name, first_name = student.split(',')
+      first_name = first_name.strip()
+      
+      if first_name == 'Test':
+          continue
+         
       course = row['Section']
       course = course.split('-')
       dept, courseLecture, section = course
